@@ -6,12 +6,12 @@ import ToDo from '../components/ToDo';
 
 class ToDoList extends Component {
     render(){
-        const {dataItems,deleteToDO} = this.props;
+        const {dataItems,deleteToDo} = this.props;
         const dataSet = dataItems.map((text,index) =>
                         <ToDo
                            item={text}
                            itemIndex={index}
-                           deleteToDo={deleteToDO}
+                           deleteToDo={deleteToDo}
                            key={index}
                         />
         );

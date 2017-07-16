@@ -18,8 +18,8 @@ class App extends Component {
   }
 
   deleteToDo(itemId){
-      const deleteToDo = [...this.state.data.splice(itemId,1)];
-      this.setState({data:deleteToDo});
+      this.state.data.splice(itemId,1);
+      this.setState({data : [...this.state.data]});
   }
 
   render() {
